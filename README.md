@@ -19,4 +19,4 @@ This repository provides an example of how to dynamically add custom `<script>` 
 
 ## Usage
 
-- The example story shows how to add a custom script (`script.js`) to the `<head>` for just one story using decorators.
+The example story shows how to add a custom script (`script.js`) to the `<head>` for just one story using decorators.
