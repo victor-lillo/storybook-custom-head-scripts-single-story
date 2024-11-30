@@ -26,3 +26,17 @@ export const LoggedIn = {
     await expect(logoutButton).toBeInTheDocument();
   },
 };
+
+export const withScript = {
+  // Dynamically inject head elements for this story
+  decorators: [
+    (Story) => {
+      const script = document.createElement('script');
+      script.src = '/custom-script.js';
+      script.type = 'module';
+      document.head.appendChild(script);
+
+      return Story();
+    },
+  ],
+};
